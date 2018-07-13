@@ -1,11 +1,15 @@
-const Discord = require('discord.js');
-const bot = new Discord.Client();
-const TOKEN = 'ENTERTOKENHERE'
+const Commando = require('discord.js-commando');
+const bot = new Commando.Client();
+const TOKEN = 'NDY3NDM3NDU0Mjc0ODU0OTEy.Diqs4w.t31VJD86CDdggCNpYjoVxxTRrY4'
+
+bot.registry.registerGroup('simple', 'Simple');
+bot.registry.registerDefaults();
+bot.registry.registerCommandsIn(__dirname + '/commands');
 
 bot.on('message', function(message) {
     if(message.content == 'Hello')
     {
-        message.reply('Hello, how are you?');
+        message.channel.send('Hello ' + message.author + ', how are you?');
     }
 });
 
