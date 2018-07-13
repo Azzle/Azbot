@@ -1,6 +1,6 @@
 const Commando = require('discord.js-commando');
 const bot = new Commando.Client();
-const TOKEN = 'NDY3NDM3NDU0Mjc0ODU0OTEy.Diqs4w.t31VJD86CDdggCNpYjoVxxTRrY4'
+const TOKEN = 'ENTERTOKENHERE'
 
 bot.registry.registerGroup('simple', 'Simple');
 bot.registry.registerDefaults();
